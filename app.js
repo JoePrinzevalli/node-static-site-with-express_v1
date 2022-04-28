@@ -7,13 +7,13 @@ const {projects} = require('./data/data.json');
 app.set('view engine', 'pug');
 
 // serves static files located in public folder
-const path = require('path');
-app.use('/static', express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static('public'));
+
 
 // sets routes to home, about and project pages
 app.get('/', (req, res, next) => {
-    res.render('index');    //did i set the locals right??
-    res.locals = data.projects;
+    res.render('index', {projects});    //did i set the locals right??
+    // res.locals = data.projects;
     next();
   });
 app.get('/about', (req, res, next) => {
@@ -41,12 +41,13 @@ app.use((req, res, next) => {
     err.message = "Oops, we couldn't find the page you were looking for!";
     console.log(err, err.status, 'Handling a 404 error!');
     next(err);
+    throw err;
 });
 
 // Global error
 app.use((req, res, next, err) => {
   err.status = 500;
-  err.message = "Oops, it seems like there is a server error!!";
+  err.message = "Oops, it seems like there is a server error!";
   console.log(err.status, err.message, 'Handling a global error!');
 });
 

@@ -4,46 +4,51 @@
         "id": 0,
         "project_name": "Connect and Use an API",
         "description": "This projects requests a JSON object from the API and parses data so that 12 employees are listed in a grid with their thumbnail image, full name, email, and location. Clicking the employee's image or name will open a modal window with more detailed information, such as the employee's birthday and address.",
-        "technologies": "HTML/CSS and JavaScript",
-        "live_link": "",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://joeprinzevalli.github.io/connect-and-use-an-api/",
         "github_link": "https://github.com/JoePrinzevalli/connect-and-use-an-api.git",
-        "image_urls": ""
+        "image_urls": ["/images/api-1.png","/images/api-2.png","/images/api-3.png","/images/api-4.png"],
+        "image_alts":["Landing image for API project", "First image for modal view", "Second image for modal view", "Mock mployee directory site"]
             },
         {
         "id": 1,
         "project_name": "Word Guessing Game",
         "description": "This project creates an interactive word guessing game, where the user tries to guess a variety of phrases, with a limited numbeer of guesses. Depending on the outcome of the game, the user will be directed to a win or lose overlay, where they will be prompted to play again.",
-        "technologies": "HTML/CSS and JavaScript",
-        "live_link": "",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://joeprinzevalli.github.io/word-guessing-game/",
         "github_link": "https://github.com/JoePrinzevalli/word-guessing-game.git",
-        "image_urls": ""
+        "image_urls": ["/images/game-1.png","/images/game-2.png","/images/game-3.png","/images/game-4.png"],
+        "image_alts":["Landing image for Guessing Game project", "Guessing game screen not filled out", "Partially filled out guessing game board", "Win overlay screen, with play again button"]
             },
         {
         "id": 2,
         "project_name": "Interactive Registration Form",
         "description": "This porject creates a fictional Full Stack confrence registration form. It includes real time error messaging, providing form validation error indications at the moment they occur to better serve the user and error messaging on submisssion of the form, which alerts the user to what part of their input is invalid/needs to be fixed.",
-        "technologies": "HTML/CSS and JavaScript",
-        "live_link": "",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://joeprinzevalli.github.io/interactive_registration_form/",
         "github_link": "https://github.com/JoePrinzevalli/interactive_registration_form.git",
-        "image_urls": ""
+        "image_urls": ["/images/interactive-1.png","/images/interactive-3.png","/images/interactive-2.png","/images/interactive-4.png"],
+        "image_alts":["Landing image for Interactive Registration Form project", "Form showing error validation", "Filled out validation form", "Form showing different payment methods"]
             },
         {
         "id": 3,
         "project_name": "Data Pagination and Filtering",
         "description": "This project uses pagination and a search function to enhance a web page's usability. It also dynamically displays 9 students per page, and adapts to newly added/removed students.",
-        "technologies": "HTML/CSS and JavaScript",
-        "live_link": "",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://joeprinzevalli.github.io/data-pagination-and-filtering/",
         "github_link": "https://github.com/JoePrinzevalli/data-pagination-and-filtering.git",
-        "image_urls": ""
+        "image_urls": ["/images/pagnation-1.png","/images/pagnation-2.png","/images/pagnation-3.png","/images/pagnation-4.png"],
+        "image_alts":["Landing image for Data Pagination and Filtering project", "Showing function of search bar", "Pagination buttons", "Multiple search options using search bar"]
             },
         {
         "id": 4,
         "project_name": "Random Quote Generator",
         "description": "This projects randomly generates quotes , by clicking the show another quote button. A set interval fucntion is used to change the background color and quote every ten seconds.",
-        "technologies": "HTML/CSS and JavaScript",
-        "live_link": "",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "live_link": "https://joeprinzevalli.github.io/random-quote-generator/",
         "github_link": "https://github.com/JoePrinzevalli/random-quote-generator.git",
-        "image_urls": ""
+        "image_urls": ["/images/quot-1.png","/images/quot-2.png","/images/quot-3.png","/images/quot-4.png"],
+        "image_alts":["Landing image for Random Quote project", "Random quote shown"]
             }    
     ]
   }

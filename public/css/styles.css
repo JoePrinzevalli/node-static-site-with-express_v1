@@ -299,7 +299,13 @@ nav a span {
   background-color: #333;
   border: 1px solid transparent;
 }
-
+.btn-link:hover {
+  color: black;
+  background-color: lightgray;
+}
+.tech-list {
+  list-style: none;
+}
 
 /* 
   Tablet layout styles 

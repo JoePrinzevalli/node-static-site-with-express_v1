@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+
+h1 404 page is working!
+h1= err.message
+h2= err.status
+pre #{err.stack}
+
+a(href='/')
+    p back to home

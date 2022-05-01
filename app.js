@@ -4,12 +4,11 @@ const express = require('express');
 const app = express();
 const {projects} = require('./data/data.json');
 
-// SSets view engine to pug
+// Sets view engine to pug
 app.set('view engine', 'pug');
 
 // Serves static files located in public folder
 app.use('/static', express.static('public'));
-
 
 // Sets routes to home, about, project
 app.get('/', (req, res, next) => {
@@ -29,32 +28,31 @@ app.get('/project/:id', (req, res, next) => {
     };
   });
 
-
-// Error handlers: i think these are wrong
+// Error Handlers: 
 
 // 404 error
 app.use((req, res, next) => {
-    if(err.status === 404) {
       const err = new Error('Page not found');
       err.status = 404;
-      err.message = "Oops, we couldn't find the page you were looking for!";
-      console.log(err, err.status, 'Handling a 404 error!');
-    } else {
       next(err);
-    }
 });
 
 // Global error
 app.use((err, req, res, next) => {
-  err.status = 500;
-  err.message = "Oops, it seems like there is a server error!";
-  console.log(err.status, err.message, 'Handling a global error!');
+  if(err.status === 404) {
+    message: err.message;
+    message = "Oops, we couldn't find the page you were looking for!";
+    status: err.status
+    console.log(err, err.status, 'Handling a 404 error!');
+    res.render('page-not-found');
+  } else {
+    err.status = 500;
+    err.message = "Oops, it seems like there is a server error!";
+    console.log(err.status, err.message, 'Handling a global error!');
+    res.render('error')
+  };
 });
 
-// Sets route to 404 page
-app.get('/page-not-found', (req, res, next) => {
-    res.render('page-not-found', {error});
-})
 
 
 // App to listen on port 3000

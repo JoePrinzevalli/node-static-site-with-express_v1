@@ -22,7 +22,7 @@
             },
         {
         "id": 2,
-        "project_name": "Interactive Registration Form",
+        "project_name": "Registration Form",
         "description": "This porject creates a fictional Full Stack confrence registration form. It includes real time error messaging, providing form validation error indications at the moment they occur to better serve the user and error messaging on submisssion of the form, which alerts the user to what part of their input is invalid/needs to be fixed.",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "live_link": "https://joeprinzevalli.github.io/interactive_registration_form/",

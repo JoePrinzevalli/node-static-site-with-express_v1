@@ -1,4 +1,5 @@
 // Require express and data.json file
+require('newrelic');
 const express = require('express');
 const app = express();
 const {projects} = require('./data/data.json');

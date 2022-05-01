@@ -20,10 +20,9 @@ block content
           //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
           //- The project title for the h5 element's text
 
-    each project in projects
-      .cell
-          a(href=`/project/${project.id}`)
-            h5= `${project.project_name}`
-            img.thumbnail(src=`/static${project.image_urls[0]}`, alt=`${project.image_alts[0]}`) 
-            //- why are the pitures so big? instrinssic ssize does not match the rendered size.
-            //- swtch .cell img css to max width of 550px, mayb flex properties
+      each project in projects
+        .cell
+            a(href=`/project/${project.id}`)
+              h5.project-header= `${project.project_name}`
+              img.thumbnail(src=`/static${project.image_urls[0]}`, alt=`${project.image_alts[0]}`) 
+              //- why is the registration form bigge than other prictures

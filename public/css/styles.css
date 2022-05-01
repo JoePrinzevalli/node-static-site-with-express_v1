@@ -4,6 +4,7 @@
 */
 * {
   box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
 }
 
 html,
@@ -13,6 +14,7 @@ body {
   min-width: 100%;
   height: 100%;
   min-height: 100%;
+  background-color: skyblue;
 }
 
 body {
@@ -137,7 +139,7 @@ nav a span {
   height: 100%;
   min-height: 100%;
   padding: 20px;
-  background: #000;
+  background: skyblue;
 }
 
 .sidebar-info-box {
@@ -167,7 +169,7 @@ nav a span {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
+  color: white
 }
 
 .sidebar a {
@@ -247,7 +249,7 @@ nav a span {
   font-size: 13px;
   letter-spacing: 2.25px;
   text-transform: uppercase;
-  color: #222;;
+  color: skyblue;
   margin: 0 auto 8px;
 }
 
@@ -261,7 +263,9 @@ nav a span {
   border: 4px solid #fff;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
-
+.cell:hover {
+  transform: scale(1.1)
+}
 
 /* 
   About and project pages styles 
@@ -272,7 +276,7 @@ nav a span {
 }
 
 .about-bio p {
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 40px;
 }
 
@@ -300,12 +304,16 @@ nav a span {
   border: 1px solid transparent;
 }
 .btn-link:hover {
-  color: black;
-  background-color: lightgray;
+  color: white;
+  background-color: skyblue;
 }
 .tech-list {
   list-style: none;
 }
+.project-header:hover {
+  color: navy;
+}
+
 
 /* 
   Tablet layout styles 

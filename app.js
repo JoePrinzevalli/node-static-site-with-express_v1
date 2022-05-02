@@ -1,4 +1,4 @@
-// Require express and data.json file
+// Require express, data.json file, and new relic
 require('newrelic');
 const express = require('express');
 const app = express();
@@ -12,7 +12,7 @@ app.use('/static', express.static('public'));
 
 // Sets routes to home, about, project
 app.get('/', (req, res, next) => {
-    res.render('index', {projects});    //did i set the locals right??
+    res.render('index', {projects});   
     // res.locals = data.projects;
   });
 app.get('/about', (req, res, next) => {
@@ -32,28 +32,27 @@ app.get('/project/:id', (req, res, next) => {
 
 // 404 error
 app.use((req, res, next) => {
-      const err = new Error('Page not found');
+      const err = new Error('Oops, looks like you wandered too far!');
       err.status = 404;
       next(err);
 });
 
-// Global error
+// Global error  
 app.use((err, req, res, next) => {
   if(err.status === 404) {
-    message: err.message;
-    message = "Oops, we couldn't find the page you were looking for!";
-    status: err.status
+    res.locals.message = err.message;
+    res.locals.status = 404;
+    err.stack;
     console.log(err, err.status, 'Handling a 404 error!');
     res.render('page-not-found');
   } else {
     err.status = 500;
-    err.message = "Oops, it seems like there is a server error!";
+    res.locals.message = err.message;
+    res.locals.status = 500;
     console.log(err.status, err.message, 'Handling a global error!');
-    res.render('error')
+    res.render('error');
   };
 });
-
-
 
 // App to listen on port 3000
 app.listen(3000, () => {

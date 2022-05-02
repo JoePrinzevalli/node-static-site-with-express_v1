@@ -2,10 +2,10 @@ extends layout.pug
 
 block content
 
-    h1 404 page is working!
+    img.page-not-found(src='/static/images/wandering.jpeg')
+    h1.error-header= status
         p= message
-        p= status
-        //- pre #{err.stack}
+        //- pre #{error.stack}
 
-    a(href='/')
-        p back to home
+        a(href='/')
+            p Back To Home &rarr;

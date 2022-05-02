@@ -5,7 +5,6 @@ html(lang="en" dir="ltr")
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title Portfolio Site
-    //- link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
     link(rel="preconnect", href="https://fonts.googleapis.com")
     link(rel="preconnect", href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap", rel="stylesheet")
@@ -20,13 +19,10 @@ html(lang="en" dir="ltr")
           img.thumbnail(src='/static/images/profile-pic.jpg', alt='')
         .dev-intro-box
 
-          //- Replace with your name
           h5 Joseph Prinzevalli Jr.
 
-          //- Replace with description of who you are, what you do, and why you are so awesome
           p I am a recent gradaute from Binghamton University, majoring in Psychology. I had an unorthodox career path and it was not until the beginning of 2022 when I found about Web Development. I'm excited to continue this path in coding and I hope you enjoy my portfolio!
 
-          //- Add path from your '/about' route handler to the href below
           a(href='/about') Learn More &rarr;
 
     .wrapper
@@ -34,7 +30,6 @@ html(lang="en" dir="ltr")
         .header-info-box
           button#menu-icon.menu-icon(type='button' data-toggle='my-info')
 
-          //- Replace with your name — this is for the mobile layout
           span Joseph Priznevalli Jr.
 
       block content

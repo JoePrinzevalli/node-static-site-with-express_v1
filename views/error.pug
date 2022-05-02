@@ -2,4 +2,8 @@ extends layout.pug
 
 block content
 
-    h1 global error pae working!
+    h1= status
+        p= message
+
+    a(href='/')
+        p Back To Home &rarr;

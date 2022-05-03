@@ -1,6 +1,7 @@
 // Require express, data.json file, and new relic
 require('newrelic');
 const express = require('express');
+const { status } = require('express/lib/response');
 const app = express();
 const {projects} = require('./data/data.json');
 
@@ -24,7 +25,11 @@ app.get('/project/:id', (req, res, next) => {
     if(project) {
       res.render('project', {project}); 
     } else {
-      res.sendStatus(404);
+      const err = new Error('Oops, looks like you wandered too far!');
+      err.status = 404;
+      res.locals.message = err.message;
+      res.locals.status = 404;
+      res.render('page-not-found');
     };
   });
 

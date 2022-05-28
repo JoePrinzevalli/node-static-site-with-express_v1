@@ -68,11 +68,6 @@ a {
   background: #fefefe;
 }
 
-.flex-row-wrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
 
 .grid {
   display: grid;

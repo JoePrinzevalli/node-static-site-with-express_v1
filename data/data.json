@@ -43,13 +43,23 @@
         {
         "id": 4,
         "project_name": "Random Quote Generator",
-        "description": "This projects randomly generates quotes , by clicking the show another quote button. A set interval fucntion is used to change the background color and quote every ten seconds.",
+        "description": "This projects randomly generates quotes, by clicking the show another quote button. A set interval fucntion is used to change the background color and quote every ten seconds.",
         "technologies": ["HTML", "CSS", "JavaScript"],
         "live_link": "https://joeprinzevalli.github.io/random-quote-generator/",
         "github_link": "https://github.com/JoePrinzevalli/random-quote-generator.git",
         "image_urls": ["/images/quot-1.png","/images/quot-2.png","/images/quot-3.png","/images/quot-4.png"],
         "image_alts":["Landing image for Random Quote project", "Random quote shown"]
-            }    
+            },   
+        {
+        "id": 5,
+        "project_name": "Managing Library Using SQL",
+        "description": "A web application that includes pages to list, add, update, and delete books. Includes filtering, pagination features and validation erroring.",
+        "technologies": ["JavaScript","Node.js","Express","Pug","SQLite","Sequelize","CSS"],
+        "live_link": "",
+        "github_link": "https://github.com/JoePrinzevalli/sql-library-manager.git",
+        "image_urls": ["/images/SQL-1.png","/images/SQL-2.png","/images/SQL-3.png","/images/SQL-4.png"],
+        "image_alts":["Landing image for SQL Manager project", "Validation Error", "Update and Delete Section", "Searched Books Section"]
+            } 
     ]
   }
   
